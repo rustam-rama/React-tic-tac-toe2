@@ -1,6 +1,6 @@
 # Крестики-нолики на React + Redux
 
-Классическая игра крестики-нолики, реализованная с использованием React и самописного Redux.
+Игра в крестики-нолики, реализованная с использованием React и Redux для управления состоянием.
 
 ## Функциональность
 
@@ -15,38 +15,54 @@
 ## Технологии
 
 - React 18
-- Самописный Redux Store
-- CSS Animations
+- Redux
+- React Redux
 - Vite
 
 ## Установка и запуск
 
 1. Клонировать репозиторий:
-```bash
-git clone https://github.com/rustam-rama/tic-tac-toe-clean.git
-cd tic-tac-toe-clean
 
+```
+git clone https://github.com/yourusername/tic-tac-toe.git
 ```
 
 2. Установить зависимости:
 
-```bash
-npm install
 ```
+npm install
+``` 
 
-3. Запустить приложение:
+3. Запустить проект:
 
-```bash
+```
 npm run dev
 ```
 
-## Структура проекта
 
-- `/src/tic-tac-toe/components` - React компоненты
-- `/src/tic-tac-toe/store` - Redux store
-- `/src/tic-tac-toe/reduce` - Reducer и логика игры
-- `/src/tic-tac-toe/action` - Action creators
+## Использование React Redux хуков
+
+В проекте используются современные хуки React Redux:
+- `useSelector` - для получения данных из store
+- `useDispatch` - для отправки actions
+
+## Принципы Redux в проекте
+
+1. **Единственный источник правды**
+   - Всё состояние игры хранится в Redux store
+
+2. **Состояние только для чтения**
+   - Изменения происходят только через dispatch actions
+
+3. **Изменения с помощью чистых функций**
+   - Reducer является чистой функцией, которая принимает предыдущее состояние и action
 
 ## Автор
 
-Рустам.
+Рустам
+```
+
+
+
+
+
