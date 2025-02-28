@@ -24,7 +24,7 @@
 1. Клонировать репозиторий:
 
 ```
-git clone https://github.com/yourusername/tic-tac-toe.git
+https://github.com/rustam-rama/React-tic-tac-toe2
 ```
 
 2. Установить зависимости:
@@ -60,9 +60,3 @@ npm run dev
 ## Автор
 
 Рустам
-```
-
-
-
-
-
