@@ -24,14 +24,14 @@
 1. Клонировать репозиторий:
 
 ```
-https://github.com/rustam-rama/React-tic-tac-toe2
+git clone https://github.com/rustam-rama/React-tic-tac-toe2.git
 ```
 
 2. Установить зависимости:
 
 ```
 npm install
-``` 
+```
 
 3. Запустить проект:
 
@@ -39,23 +39,40 @@ npm install
 npm run dev
 ```
 
-
 ## Использование React Redux хуков
 
 В проекте используются современные хуки React Redux:
+
 - `useSelector` - для получения данных из store
 - `useDispatch` - для отправки actions
 
 ## Принципы Redux в проекте
 
 1. **Единственный источник правды**
+
    - Всё состояние игры хранится в Redux store
 
 2. **Состояние только для чтения**
+
    - Изменения происходят только через dispatch actions
 
 3. **Изменения с помощью чистых функций**
    - Reducer является чистой функцией, которая принимает предыдущее состояние и action
+
+## Отладка с Redux DevTools
+
+Проект настроен для работы с Redux DevTools - расширением браузера для отладки Redux приложений:
+
+1. Установите [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd) для Chrome
+2. Откройте инструменты разработчика (F12)
+3. Перейдите на вкладку "Redux"
+
+С помощью Redux DevTools вы можете:
+
+- Отслеживать все действия в приложении
+- Просматривать состояние в реальном времени
+- Видеть историю изменений
+- Выполнять time-travel отладку
 
 ## Автор
 
